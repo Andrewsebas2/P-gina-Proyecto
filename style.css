@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+body{
+    background-color: #6bc1ed;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/*Encabezado*/
+header{
+    background: #aadaeb;
+    z-index: 50;
+    opacity: 95%;
+    position: sticky;
+    top: 10px;
+}
+
+header #containers{
+    display: flex;
+}
+
+header #containers img{
+    width: 240px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+header #containers #items {
+    align-self: center;
+}
+
+header #containers #items ul{
+    display: flex;  
+    list-style: none;
+    margin-left: 520px;   
+}
+
+header #containers #items ul li{
+    margin: 30px;
+    transition: all 1s;
+}
+
+header #containers #items ul li a{
+    text-decoration: none;
+    color: black;
+    transition-property: color;
+    transition-duration: .4s;
+}
+
+header #containers #items ul li a:hover{
+    color: white;
+}
+
+/*Bienvenida*/
+
+main{
+    background: rgb(252, 252, 252);
+    z-index: 20;
+    opacity: 90%;
+    margin-top: 20px;
+}
+
+main #bienvenida #container{
+    background: #aadaeb;
+    opacity: 90%;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+main #bienvenida #container #imagen img{
+    object-fit: cover;
+    display: inline;
+    width: 350px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 75px 0px;
+}
+
+main #bienvenida #container #texto{
+    height: 300px;
+    width: 35%;
+    margin: 75px 0px;
+    border-radius: 2px;
+}
+
+main #bienvenida #container #texto h3{
+    text-align: center;
+    padding: 15px 20px;
+}
+main #bienvenida #container #texto p{
+    text-align: center;
+    padding: 5px 20px;
+}
+
+/*Información*/
+
+main #informacion{
+    background: #aadaeb;
+    opacity: 90%;
+    width: 80%;
+    margin: auto;
+    margin-top: 140px;
+}
+
+main #informacion #containerTit{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+main #informacion #containerTit #tit h2{
+    font-size: 40px;
+    margin-top: 200px;
+}
+
+main #informacion #imgInfo img{
+    width: 450px;
+    margin-right: 20px;
+}
+
+main #informacion #containerInfo{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+main #informacion #containerInfo #list1{
+    width: 35%;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+main #informacion #containerInfo #list2{
+    width: 35%;
+}
+
+/*Contactanos (entrada)*/
+
+main #contactanos{
+    background: #aadaeb;
+    opacity: 90%;
+    width: 80%;
+    margin: auto;
+    margin-top: 140px;
+}
+
+main #contactanos #entrada #imgContac img{
+    width: 400px;
+    margin-top: 40px;
+}
+
+main #contactanos #entrada{
+    text-align: center;
+}
+
+main #contactanos #entrada #text{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/*Contactanos (Formulario)*/
+
+#contContactanos{
+    display: flex;
+    background: linear-gradient(to top, #5a9cbd, rgb(240, 240, 240));
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+#contContactanos img{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+#contContactanos #form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contContactanos #form textarea{
+    resize: none;
+    background: transparent;
+    width: 300px;
+    padding: 2px 4px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    border-radius: 1.5px;
+}
+
+#contContactanos #form textarea:focus{
+    outline: none;
+    background: linear-gradient(to top, rgba(67, 66, 66, 0.316), transparent);
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+#contContactanos #form #nombre input{
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    padding: 2px 4px;
+    border-radius: 1.5px;
+}
+
+#contContactanos #form #nombre input:focus{
+    outline: none;
+    background: linear-gradient(to top, rgba(67, 66, 66, 0.316), transparent);
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+#contContactanos #form #email input{
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    padding: 2px 4px;
+    border-radius: 1.5px;
+}
+
+#contContactanos #form #email input:focus{
+    outline: none;
+    background: linear-gradient(to top, rgba(67, 66, 66, 0.316), transparent);
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+#boton input{
+    width: 200px;
+    background: transparent;
+    margin-top: 30px;
+    color: black;
+}
+
+/*Pie de página*/
+
+footer{
+    background: #336e8c;
+    
+}
+
+
